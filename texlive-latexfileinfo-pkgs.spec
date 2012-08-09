@@ -6,7 +6,7 @@
 # catalog-version 0.22
 Name:		texlive-latexfileinfo-pkgs
 Version:	0.22
-Release:	1
+Release:	2
 Summary:	A comparison of packages showing LaTeX file information
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latexfileinfo-pkgs
