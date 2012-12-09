@@ -54,3 +54,12 @@ mentioned briefly.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.22-2
++ Revision: 813600
+- Update to latest release.
+- Import texlive-latexfileinfo-pkgs
+- Import texlive-latexfileinfo-pkgs
+
