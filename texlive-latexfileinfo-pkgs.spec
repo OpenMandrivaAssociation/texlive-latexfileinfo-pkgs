@@ -1,19 +1,13 @@
-# revision 26760
-# category Package
-# catalog-ctan /info/latexfileinfo-pkgs
-# catalog-date 2012-05-30 14:24:48 +0200
-# catalog-license lppl1.3
-# catalog-version 0.22
 Name:		texlive-latexfileinfo-pkgs
-Version:	0.22
-Release:	12
+Version:	26760
+Release:	1
 Summary:	A comparison of packages showing LaTeX file information
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latexfileinfo-pkgs
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileinfo-pkgs.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileinfo-pkgs.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileinfo-pkgs.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileinfo-pkgs.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileinfo-pkgs.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileinfo-pkgs.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ other packages are discussed; revision control systems are
 mentioned briefly.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,19 +41,11 @@ mentioned briefly.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.22-2
-+ Revision: 813600
-- Update to latest release.
-- Import texlive-latexfileinfo-pkgs
-- Import texlive-latexfileinfo-pkgs
-
