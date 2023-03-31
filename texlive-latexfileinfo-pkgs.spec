@@ -1,6 +1,6 @@
 Name:		texlive-latexfileinfo-pkgs
 Version:	26760
-Release:	1
+Release:	2
 Summary:	A comparison of packages showing LaTeX file information
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latexfileinfo-pkgs
