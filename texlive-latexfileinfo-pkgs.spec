@@ -3,7 +3,7 @@ Version:	26760
 Release:	2
 Summary:	A comparison of packages showing LaTeX file information
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/latexfileinfo-pkgs
+URL:		https://www.ctan.org/tex-archive/info/latexfileinfo-pkgs
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileinfo-pkgs.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileinfo-pkgs.doc.r%{version}.tar.xz
